@@ -86,7 +86,7 @@ Servers\Unnamed\LogFileDdl<|||>3<|||>0
 Servers\Unnamed\LogFileDml<|||>3<|||>0
 Servers\Unnamed\LogFilePath<|||>1<|||>/home/danush-soosai/.config/heidisql/Logs/%session/%db/%y%m%d.sql
 Servers\Unnamed\ServerVersionFull<|||>1<|||>11.8.3-MariaDB-1build1 from Ubuntu - -- Please help get to 10k stars at https://github.com/MariaDB/Server
-Servers\Unnamed\ConnectCount<|||>3<|||>6
+Servers\Unnamed\ConnectCount<|||>3<|||>7
 Servers\Unnamed\ServerVersion<|||>3<|||>110803
-Servers\Unnamed\LastConnect<|||>1<|||>2026-05-04 20:35:43
+Servers\Unnamed\LastConnect<|||>1<|||>2026-05-04 22:33:09
 Servers\Unnamed\lastUsedDB<|||>1<|||>course_manager

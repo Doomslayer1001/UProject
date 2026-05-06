@@ -4,33 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Your script -->
-<script src="../scripts/script.js"></script>
+<script src="../scripts/index.js"></script>
 
-<title>Student Course Manager</title>
+<title>Student Course</title>
 </head>
 
 <body>
 
 <h2>My Courses</h2>
-<table border="1" id="myCourses">
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Action</th>
-</tr>
-</table>
 
-<h2>Available Courses</h2>
-<table border="1" id="availableCourses">
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Action</th>
-</tr>
+<!-- Sort dropdown -->
+<label for="sort">Sort:</label>
+<select id="sort">
+  <option value="az">A-Z</option>
+  <option value="za">Z-A</option>
+</select>
+
+<table border="1" id="myCourses">
+
+    <tr>
+        <th>Name</th>
+        <th>Instructor</th>
+        <th>Credit</th>
+        <th>Status</th>
+    </tr>
+
 </table>
 
 </body>

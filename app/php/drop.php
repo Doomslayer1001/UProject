@@ -1,15 +1,17 @@
 <?php
-include '../config/db.php';
+    header('Content-Type: application/json');
 
-$data = json_decode(file_get_contents("php://input"));
+    include '../config/db.php';
 
-$course_id = $data->course_id;
+    $data = json_decode(file_get_contents("php://input"));
 
-$sql = "DELETE FROM enrollments WHERE course_id = $course_id";
+    $course_id = $data->course_id;
 
-if ($conn->query($sql) === TRUE) {
-    echo json_encode(["status" => "success"]);
-} else {
-    echo json_encode(["status" => "error"]);
-}
+    $sql = "DELETE FROM enrollments WHERE course_id = $course_id";
+
+    if ($conn->query($sql) === TRUE) {
+        echo json_encode(["status" => "success"]);
+    } else {
+        echo json_encode(["status" => "error"]);
+    }
 ?>

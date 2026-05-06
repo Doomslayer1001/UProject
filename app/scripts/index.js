@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     $.ajax({
 
-        url: "../php/get_courses.php",
+        url: "../php/get_allcourses.php",
         method: "GET",
 
         success: function (data) {

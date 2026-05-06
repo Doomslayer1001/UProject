@@ -3,30 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-        <script src="../scripts/script.js"></script>
+
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../scripts/manage-course.js"></script>
+
         <title>Student Course Manager</title>
     </head>
 
     <body>
-        <h2>My Courses</h2>
 
-        <table border="1" id="myCourses">
-            <tr>
-                <th>Course ID</th>
-                <th>Course Name</th>
-                <th>Action</th>
-            </tr>
+    <nav>
+        <div class="logo">🎓 Course Manager</div>
+        <ul>
+            <li><a href="./index.html" class="active">Courses</a></li>
+            <li><a href="./manage.html">Enrollment</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>My Courses</h2>
+        <table id="myCourses">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
         </table>
 
         <h2>Available Courses</h2>
-
-        <table border="1" id="availableCourses">
-            <tr>
-                <th>Course ID</th>
-                <th>Course Name</th>
-                <th>Action</th>
-            </tr>
+        <table id="availableCourses">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
         </table>
+
+    </div>
+
     </body>
 </html>

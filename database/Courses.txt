@@ -1,4 +1,4 @@
-FileDialogPreviousDir<|||>1<|||>/home/danush-soosai/Unix_Project/database/
+FileDialogPreviousDir<|||>1<|||>/home/danush-soosai/UProject/database/
 LastSessions<|||>1<|||>Unnamed
 LastActiveSession<|||>1<|||>Unnamed
 ColWidths_connform.ListSessions<|||>1<|||>163,50,50,50,50,50,37
@@ -30,7 +30,7 @@ ColWidths_MainForm.ListTables<|||>1<|||>96,56,56,96,96,56,80,50,56,56,56,56,56,7
 ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
 ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
 ColSort_MainForm.ListTables<|||>1<|||>0,0
-ColWidths_frmTableEditor.listColumns<|||>1<|||>56,100,189,90,60,65,50,145,130,172,100,100,50,50,50
+ColWidths_frmTableEditor.listColumns<|||>1<|||>40,100,189,90,60,65,50,145,130,172,100,100,50,50,50
 ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
 ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
 ColSort_frmTableEditor.listColumns<|||>1<|||>0,0
@@ -85,8 +85,8 @@ Servers\Unnamed\IgnoreDatabasePattern<|||>1<|||>
 Servers\Unnamed\LogFileDdl<|||>3<|||>0
 Servers\Unnamed\LogFileDml<|||>3<|||>0
 Servers\Unnamed\LogFilePath<|||>1<|||>/home/danush-soosai/.config/heidisql/Logs/%session/%db/%y%m%d.sql
-Servers\Unnamed\ServerVersionFull<|||>1<|||>11.8.3-MariaDB-1build1 from Ubuntu - -- Please help get to 10k stars at https://github.com/MariaDB/Server
-Servers\Unnamed\ConnectCount<|||>3<|||>7
-Servers\Unnamed\ServerVersion<|||>3<|||>110803
-Servers\Unnamed\LastConnect<|||>1<|||>2026-05-04 22:33:09
+Servers\Unnamed\ServerVersionFull<|||>1<|||>10.5.29-MariaDB-ubu2004 - mariadb.org binary distribution
+Servers\Unnamed\ConnectCount<|||>3<|||>8
+Servers\Unnamed\ServerVersion<|||>3<|||>100529
+Servers\Unnamed\LastConnect<|||>1<|||>2026-05-06 15:50:33
 Servers\Unnamed\lastUsedDB<|||>1<|||>course_manager

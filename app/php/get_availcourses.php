@@ -1,0 +1,16 @@
+<?php
+    header('Content-Type: application/json');
+
+    include '../config/db.php';
+
+    $sql = "SELECT * FROM courses where status = 'Open'";
+    $result = $conn->query($sql);
+
+    $courses = [];
+
+    while ($row = $result->fetch_assoc()) {
+        $courses[] = $row;
+    }
+
+    echo json_encode($courses);
+?>

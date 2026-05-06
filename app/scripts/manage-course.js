@@ -31,7 +31,7 @@ function loadCourses() {
         });
 
         // Load available
-        $.get('/php/get_courses.php', function (courses) {
+        $.get('/php/get_availcourses.php', function (courses) {
 
             courses.forEach(c => {
                 if (!enrolledIds.includes(c.course_id)) {

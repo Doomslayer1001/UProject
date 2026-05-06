@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    let courses = [];
-
     function displayCourses(courseList) {
 
         $("#myCourses tr:gt(0)").remove();
@@ -21,46 +19,39 @@ $(document).ready(function () {
 
     }
 
-    $.ajax({
+    function loadCourses(url) {
 
-        url: "../php/get_allcourses.php",
-        method: "GET",
+        $.ajax({
+            url: url,
+            method: "GET",
+            success: function (data) {
+                displayCourses(data);
+            },
+            error: function (xhr, status, error) {
+                console.log(error);
+            }
+        });
 
-        success: function (data) {
+    }
 
-            courses = data;
-
-            displayCourses(courses);
-
-        },
-
-        error: function (xhr, status, error) {
-
-            console.log(error);
-
-        }
-
-    });
+    // default load
+    loadCourses("../php/get_allcourses.php");
 
     $("#sort").change(function () {
 
         let value = $(this).val();
 
         if (value === "az") {
-
-            courses.sort((a, b) =>
-                a.course_name.localeCompare(b.course_name)
-            );
-
-        } else {
-
-            courses.sort((a, b) =>
-                b.course_name.localeCompare(a.course_name)
-            );
-
+            loadCourses("../php/name_sort.php?order=asc");
         }
 
-        displayCourses(courses);
+        else if (value === "za") {
+            loadCourses("../php/name_sort.php?order=desc");
+        }
+
+        else if (value === "status") {
+            loadCourses("../php/status_sort.php");
+        }
 
     });
 

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="../styles/style.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script src="../scripts/index.js"></script>
 
 <title>Student Course</title>
@@ -13,24 +13,28 @@
 
 <body>
 
-<h2>My Courses</h2>
+<nav>
+    <div class="logo">🎓 Course</div>
+    <ul>
+        <li><a href="./index.html" class="active">Courses</a></li>
+        <li><a href="./manage.html">Enrollment</a></li>
+    </ul>
+</nav>
 
-<!-- Sort dropdown -->
 <label for="sort">Sort:</label>
 <select id="sort">
-  <option value="az">A-Z</option>
-  <option value="za">Z-A</option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option>
+    <option value="status">Sort By Status</option>
 </select>
 
 <table border="1" id="myCourses">
-
     <tr>
         <th>Name</th>
         <th>Instructor</th>
         <th>Credit</th>
         <th>Status</th>
     </tr>
-
 </table>
 
 </body>

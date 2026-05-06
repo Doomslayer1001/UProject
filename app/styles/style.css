@@ -52,6 +52,32 @@ nav a.active {
     background: #3498db;
 }
 
+/* Sort */
+#sort {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+#sort:hover {
+  border-color: #888;
+}
+
+#sort:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
 /* Layout */
 .container {
     max-width: 900px;

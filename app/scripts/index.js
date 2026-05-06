@@ -13,7 +13,7 @@ $(document).ready(function () {
                     <td>${course.course_name}</td>
                     <td>${course.instructor_name}</td>
                     <td>${course.credits}</td>
-                    <td>${course.Status}</td>
+                    <td>${course.status}</td>
                 </tr>
             `);
 

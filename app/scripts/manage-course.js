@@ -62,6 +62,7 @@ function enrollCourse(id) {
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ course_id: id }),
+        cache: false,
         success: function () {
             loadCourses(); // no reload
         },
@@ -79,6 +80,7 @@ function dropCourse(id) {
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ course_id: id }),
+        cache: false,
         success: function () {
             loadCourses(); // no reload
         },

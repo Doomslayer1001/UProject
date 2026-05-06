@@ -1,0 +1,79 @@
+[
+    {
+        "course_id": "1",
+        "course_name": "Web Development",
+        "instructor_name": "Dr. Smith",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "3",
+        "course_name": "Data Structures",
+        "instructor_name": "Dr. Lee",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "4",
+        "course_name": "Operating Systems",
+        "instructor_name": "Dr. Brown",
+        "credits": "4",
+        "status": "Open"
+    },
+    {
+        "course_id": "6",
+        "course_name": "Software Engineering",
+        "instructor_name": "Dr. Wilson",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "7",
+        "course_name": "Artificial Intelligence",
+        "instructor_name": "Dr. Taylor",
+        "credits": "4",
+        "status": "Open"
+    },
+    {
+        "course_id": "9",
+        "course_name": "Cyber Security",
+        "instructor_name": "Prof. Thomas",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "10",
+        "course_name": "Mobile App Development",
+        "instructor_name": "Dr. Jackson",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "12",
+        "course_name": "Human Computer Interaction",
+        "instructor_name": "Prof. Harris",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "13",
+        "course_name": "Game Development",
+        "instructor_name": "Dr. Martin",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "15",
+        "course_name": "Discrete Mathematics",
+        "instructor_name": "Prof. Garcia",
+        "credits": "3",
+        "status": "Open"
+    },
+    {
+        "course_id": "16",
+        "course_name": "Linear Algebra",
+        "instructor_name": "Dr. Martinez",
+        "credits": "3",
+        "status": "Open"
+    }
+]

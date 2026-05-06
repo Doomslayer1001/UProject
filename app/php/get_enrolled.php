@@ -1,7 +1,14 @@
 <?php
     header('Content-Type: application/json');
-
     include '../config/db.php';
+    include 'cache_helper.php';
+
+    $cacheFile = "../cache/enrolled.json";
+
+    if ($data = getCache($cacheFile)) {
+        echo json_encode($data);
+        exit;
+    }
 
     $sql = "
     SELECT c.course_id, c.course_name, c.instructor_name, c.credits
@@ -17,5 +24,7 @@
         $enrolled[] = $row;
     }
 
-    echo json_encode($enrolled);
+    setCache($cacheFile, $enrolled);
+
+    echo json_encode($enrolled, JSON_PRETTY_PRINT);
 ?>

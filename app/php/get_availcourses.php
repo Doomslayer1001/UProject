@@ -1,9 +1,16 @@
 <?php
     header('Content-Type: application/json');
-
     include '../config/db.php';
+    include 'cache_helper.php';
 
-    $sql = "SELECT * FROM courses where status = 'Open'";
+    $cacheFile = "../cache/avail_courses.json";
+
+    if ($data = getCache($cacheFile)) {
+        echo json_encode($data);
+        exit;
+    }
+
+    $sql = "SELECT * FROM courses WHERE status = 'Open'";
     $result = $conn->query($sql);
 
     $courses = [];
@@ -12,5 +19,7 @@
         $courses[] = $row;
     }
 
-    echo json_encode($courses);
+    setCache($cacheFile, $courses);
+
+    echo json_encode($courses, JSON_PRETTY_PRINT);
 ?>

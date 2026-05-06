@@ -1,0 +1,32 @@
+[
+    {
+        "course_id": "1",
+        "course_name": "Web Development",
+        "instructor_name": "Dr. Smith",
+        "credits": "3"
+    },
+    {
+        "course_id": "3",
+        "course_name": "Data Structures",
+        "instructor_name": "Dr. Lee",
+        "credits": "3"
+    },
+    {
+        "course_id": "6",
+        "course_name": "Software Engineering",
+        "instructor_name": "Dr. Wilson",
+        "credits": "3"
+    },
+    {
+        "course_id": "9",
+        "course_name": "Cyber Security",
+        "instructor_name": "Prof. Thomas",
+        "credits": "3"
+    },
+    {
+        "course_id": "12",
+        "course_name": "Human Computer Interaction",
+        "instructor_name": "Prof. Harris",
+        "credits": "3"
+    }
+]

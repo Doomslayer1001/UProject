@@ -24,6 +24,7 @@ $(document).ready(function () {
         $.ajax({
             url: url,
             method: "GET",
+            cache: false,
             success: function (data) {
                 displayCourses(data);
             },

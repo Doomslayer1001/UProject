@@ -17,6 +17,8 @@ services:
       MYSQL_PASSWORD: password123
     ports:
       - "3306:3306"
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   cache:
     image: redis:latest

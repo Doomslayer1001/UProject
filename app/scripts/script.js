@@ -1,3 +1,4 @@
+console.log("JS loaded");
 $(document).ready(function () {
 
     let enrolledIds = [];

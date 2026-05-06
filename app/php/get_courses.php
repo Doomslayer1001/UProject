@@ -1,16 +1,15 @@
 <?php
-    header('Content-Type: application/json');
+header('Content-Type: application/json');
 
-    include '../config/db.php';
+include '../config/db.php';
 
-    $sql = "SELECT * FROM courses";
-    $result = $conn->query($sql);
+$sql = "SELECT * FROM courses";
+$result = $conn->query($sql);
 
-    $courses = [];
+$courses = [];
 
-    while ($row = $result->fetch_assoc()) {
-        $courses[] = $row;
-    }
+while ($row = $result->fetch_assoc()) {
+    $courses[] = $row;
+}
 
-    echo json_encode($courses);
-?>
+echo json_encode($courses);

@@ -3,7 +3,13 @@
 header('Content-Type: application/json');
 include '../config/db.php';
 
-$sql = "SELECT * FROM courses ORDER BY course_name ASC";
+$order = $_GET['order'] ?? 'asc';
+
+if ($order === "desc") {
+    $sql = "SELECT * FROM courses ORDER BY course_name DESC";
+} else {
+    $sql = "SELECT * FROM courses ORDER BY course_name ASC";
+}
 
 $result = $conn->query($sql);
 

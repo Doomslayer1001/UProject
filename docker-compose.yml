@@ -1,13 +1,10 @@
 services:
   web:
-    image: php:8.2-apache
+    build: .
     ports:
       - "8080:80"
     volumes:
       - ./app:/var/www/html
-    depends_on:
-      - db
-      - cache
 
   db:
     image: mariadb:10.5

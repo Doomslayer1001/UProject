@@ -1,16 +1,23 @@
 <?php
-    function getCache($file) {
-        if (file_exists($file)) {
-            return json_decode(file_get_contents($file), true);
-        }
-        return null;
+    function getRedis() {
+        $redis = new Redis();
+        $redis->connect('cache', 6379);
+        return $redis;
     }
 
-    function setCache($file, $data) {
-        file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT));
+    function getCache($key) {
+        $redis = getRedis();
+        $data = $redis->get($key);
+        return $data ? json_decode($data, true) : null;
+    }
+
+    function setCache($key, $data, $ttl = 10) {
+        $redis = getRedis();
+        $redis->setex($key, $ttl, json_encode($data));
     }
 
     function clearCache() {
-        array_map('unlink', glob("../cache/*.json"));
+        $redis = getRedis();
+        $redis->flushAll();
     }
 ?>

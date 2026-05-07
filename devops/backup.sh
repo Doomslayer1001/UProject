@@ -1,7 +1,11 @@
 #!/bin/bash
 
 DATE=$(date +%F-%H-%M)
-BACKUP_DIR="/home/danush-soosai/UProject/db_backups"
+
+# Get script directory
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BACKUP_DIR="$SCRIPT_DIR/../db_backups"
+
 CONTAINER_NAME="uproject-db-1"
 DB_NAME="course_manager"
 DB_USER="root"

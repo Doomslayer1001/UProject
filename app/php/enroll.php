@@ -1,5 +1,6 @@
 <?php
     header('Content-Type: application/json');
+
     include '../config/db.php';
     include 'cache_helper.php';
 
@@ -16,7 +17,7 @@
     $stmt->bind_param("i", $course_id);
 
     if ($stmt->execute()) {
-        clearCache(); 
+        clearCache(); // clear Redis
         echo json_encode(["status" => "enrolled"]);
     } else {
         echo json_encode(["status" => "error"]);

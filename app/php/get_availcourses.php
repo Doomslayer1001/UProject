@@ -1,12 +1,13 @@
 <?php
     header('Content-Type: application/json');
+
     include '../config/db.php';
     include 'cache_helper.php';
 
-    $cacheFile = "../cache/avail_courses.json";
+    $cacheKey = 'available_courses';
 
-    if ($data = getCache($cacheFile)) {
-        echo json_encode($data);
+    if ($data = getCache($cacheKey)) {
+        echo json_encode($data, JSON_PRETTY_PRINT);
         exit;
     }
 
@@ -15,11 +16,13 @@
 
     $courses = [];
 
-    while ($row = $result->fetch_assoc()) {
-        $courses[] = $row;
+    if ($result) {
+        while ($row = $result->fetch_assoc()) {
+            $courses[] = $row;
+        }
     }
 
-    setCache($cacheFile, $courses);
+    setCache($cacheKey, $courses);
 
     echo json_encode($courses, JSON_PRETTY_PRINT);
 ?>
